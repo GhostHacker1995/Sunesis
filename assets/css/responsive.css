@@ -1,0 +1,269 @@
+/*
+::
+:: Theme Name: MedHealth - Medical & Health Template
+:: Email: Nourramadan144@gmail.com
+:: Author URI: https://themeforest.net/user/ar-coder
+:: Author: ar-coder
+:: Version: 1.0
+::
+*/
+
+/* :: Medium devices */
+@media (max-width: 991px) {
+    
+    /* :: Navbar */
+    .nav-bar .container{
+        z-index: auto;
+    }
+    .nav-bar .nav-brand{
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+        position: relative;
+        z-index: 100;
+    }
+    .nav-bar .nav-brand .nav-bar-toggler{
+        display: block;
+        padding: 0;
+        border: 0;
+        background-color: transparent;
+        outline: none;
+    }
+    .nav-bar .nav-brand .nav-bar-toggler i{
+        color: #223645;
+        font-size: 30px;
+    }
+    .nav-bar .nav-brand .nav-bar-toggler:hover i{
+        color: #42B3E5;
+    }
+    .nav-bar .nav-menu-links{
+        padding: 135px 30px 30px 30px;
+        position: fixed;
+        left: -300px;
+        top: 0;
+        width: 300px;
+        height: 100%;
+        z-index: 20;
+        background-color: #FFF;
+        display: block;
+        opacity: 0;
+    }
+    .nav-bar.active .nav-menu-links{
+        padding-top: 85px;
+    }
+    .nav-bar .nav-menu-links.active{
+        left: 0;
+        opacity: 1;
+    }
+    .nav-bar .nav-menu-links .menu-links{
+        display: block;
+    }
+    .nav-bar .nav-menu-links .menu-links .item{
+        display: block;
+        border-bottom: 1px solid #EAEAEA;
+    }
+    .nav-bar .nav-menu-links .menu-links .item:last-of-type{
+        border-bottom: 0;
+    }
+    .nav-bar .nav-menu-links .menu-links .item .item-link{
+        margin: 0;
+        padding: 10px 0;
+    }
+    .nav-bar .nav-menu-links .menu-links .item.has-menu .item-link:after{
+        float: right;
+        margin: 8px 0;
+    }
+    .nav-bar .nav-menu-links .menu-links .item.has-menu .sub-menu{
+        -webkit-transform: translateY(0px);
+            -ms-transform: translateY(0px);
+                transform: translateY(0px);
+        opacity: 1;
+        visibility: visible;
+        position: unset;
+        display: none;
+        width: 100%;
+        -webkit-transition: unset;
+        -o-transition: unset;
+        transition: unset;
+        -webkit-box-shadow: none;
+                box-shadow: none;
+        border: 0;
+    }
+    .nav-bar .nav-menu-links .menu-links .item.has-menu .sub-menu li a{
+        padding: 0 0 10px 0;
+        margin: 0 0 10px 20px;
+    }
+    .nav-bar .nav-menu-links .menu-links .item.has-menu .sub-menu li:last-of-type a{
+        margin-bottom: 0;
+        padding-bottom: 0;
+        border-bottom: 0;
+    }
+    
+    /* :: Header */
+    .header.header-2{
+        height: auto;
+        padding: 100px 0;
+    }
+    .header.header-2 .header-hero .head-info{
+        text-align: center;
+    }
+    .header.header-2 .header-hero .img-box img{
+        width: 400px;
+        margin: auto;
+        margin-top: 50px;
+    }
+    .header .header-hero .cover-background .banner .head-info .handline{
+        font-size: 50px;
+    }
+    
+    /* :: About */
+    .about .text-box{
+        margin-top: 50px;
+    }
+    
+    /* :: Features */
+    .features .features-watch{
+        margin-bottom: 110px;
+        margin-top: 50px;
+    }
+    
+    /* :: Testimonials */
+    .testimonials .testimonials-text-box .box-item-testimonials .text{
+        font-size: 20px;
+    }
+    .testimonials .testimonials-carousel.owl-theme .owl-nav{
+        position: unset;
+        margin-top: 30px;
+    }
+    
+    /* :: Footer */
+    .footer .contact-info,
+    .footer .links{
+        margin-bottom: 30px;
+    }
+    
+    /* :: Blog Page */
+    .blog .pagination-blog-area{
+        margin-top: 30px;
+    }
+    
+    /* :: Single Services Page */
+    .services.single .text-box{
+        margin-bottom: 50px;
+    }
+}
+
+/* :: Small devices */
+@media (max-width: 768px) {
+    
+    /* :: Top Bar */
+    .top-bar .social-media-top-bar{
+        display: none;
+    }
+    
+    /* :: Header */
+    .header.header-2 .header-hero .img-box img{
+        display: none;
+    }
+    .header .header-hero .cover-background .banner .head-info .handline{
+        font-size: 42px;
+    }
+    .header .header-hero .cover-background .banner .head-info p{
+        font-size: 16px;
+    }
+    
+    /* :: Testimonials */
+    .testimonials .testimonials-text-box{
+        padding: 50px 80px;
+    }
+    
+    /* :: Newsletters */
+    .newsletters .newsletters-box .newsletters-text-box{
+        padding: 25px;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 0;
+        border-bottom-left-radius: 0;
+    }
+    .newsletters .newsletters-box .newsletters-img-box{
+        border-top-left-radius: 0px;
+        border-top-right-radius: 0px;
+        border-bottom-right-radius: 5px;
+        border-bottom-left-radius: 5px;
+    }
+    .background-section{
+        height: 50%;
+    }
+    
+    /* :: Map And Contact */
+    .map-and-contact .contact-us{
+        position: unset;
+        -webkit-transform: none;
+            -ms-transform: none;
+                transform: none;
+        margin: 100px 0;
+        width: auto;
+    }
+    
+}
+
+/* :: Extra small devices */
+@media (max-width: 575px) {
+
+    .index-header .box-index-header h1,
+    .index-header .box-index-header .text{
+        font-size: 40px;
+    }
+    
+    /* :: Top Bar */
+    .top-bar{
+        display: none;
+    }
+    
+    .nav-bar .nav-menu-links{
+        padding-top: 85px;
+        width: 100%;
+        left: -100%;
+    }
+    
+    /* :: Header */
+    .header .header-hero .cover-background .banner .head-info .handline{
+        font-size: 25px;
+    }
+    .header.header-2 .header-hero .head-info .handline{
+        font-size: 35px;
+    }
+    .header .header-hero .cover-background .banner .head-info p{
+        font-size: 14px;
+    }
+    .header .header-hero .cover-background .banner .head-info .buttons .btn-1,
+    .header.header-2 .header-hero .head-info .buttons .btn-1,
+    .index-header .box-index-header .buttons .btn-1{
+        margin-bottom: 10px;
+        margin-right: 0;
+    }
+    
+    /* :: Testimonials */
+    .testimonials .testimonials-text-box{
+        padding: 50px 30px;
+    }
+    
+    /* :: Breadcrumb Header */
+    .breadcrumb-header .banner .head-info h1{
+        font-size: 35px;
+    }
+    
+    /* :: Schedule */
+    .calendar{
+        overflow: scroll;
+    }
+    
+}
