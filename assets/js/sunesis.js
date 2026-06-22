@@ -65,6 +65,26 @@
     }
   }
 
+  // Graceful fallbacks for client-supplied image slots not yet provided
+  var broken = function (img) { return img.complete && img.naturalWidth === 0; };
+  document.querySelectorAll("img.avatar[data-initials]").forEach(function (img) {
+    var swap = function () {
+      if (!img.isConnected) return;
+      var s = document.createElement("span");
+      s.className = "avatar avatar--mono";
+      s.setAttribute("aria-hidden", "true");
+      s.textContent = img.getAttribute("data-initials");
+      img.replaceWith(s);
+    };
+    img.addEventListener("error", swap);
+    if (broken(img)) swap();
+  });
+  document.querySelectorAll("img.partner-logo, img.team-photo").forEach(function (img) {
+    var mark = function () { img.classList.add("img-missing"); };
+    img.addEventListener("error", mark);
+    if (broken(img)) mark();
+  });
+
   // Forms -> WhatsApp composer
   var WA = "https://wa.me/256758942379?text=";
   document.querySelectorAll("form[data-wa]").forEach(function (form) {
