@@ -79,7 +79,7 @@
     img.addEventListener("error", swap);
     if (broken(img)) swap();
   });
-  document.querySelectorAll("img.partner-logo, img.team-photo").forEach(function (img) {
+  document.querySelectorAll("img.partner-logo, img.team-photo, img.team-member__photo").forEach(function (img) {
     var mark = function () { img.classList.add("img-missing"); };
     img.addEventListener("error", mark);
     if (broken(img)) mark();
