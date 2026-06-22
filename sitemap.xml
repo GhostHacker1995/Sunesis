@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Replace https://sunesismedical.com with the real production domain before launch (also update robots.txt). -->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://sunesismedical.com/</loc></url>
+  <url><loc>https://sunesismedical.com/about-us</loc></url>
+  <url><loc>https://sunesismedical.com/services</loc></url>
+  <url><loc>https://sunesismedical.com/services/mobile-care</loc></url>
+  <url><loc>https://sunesismedical.com/services/corporate-health</loc></url>
+  <url><loc>https://sunesismedical.com/services/mental-health</loc></url>
+  <url><loc>https://sunesismedical.com/services/medical-travel</loc></url>
+  <url><loc>https://sunesismedical.com/services/first-aid</loc></url>
+  <url><loc>https://sunesismedical.com/contact-us</loc></url>
+  <url><loc>https://sunesismedical.com/appointment</loc></url>
+</urlset>
