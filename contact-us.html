@@ -8,7 +8,7 @@
 <meta name="author" content="Sunesis Medical Services">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/assets/css/sunesis.css">
 </head>
 <body>
@@ -20,83 +20,70 @@
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
   </button>
   <div class="nav" id="primary-nav">
-    <a href="/">Home</a>
-    <a href="/about-us">About Us</a>
-    <a href="/services">Our Services</a>
-    <a href="/contact-us" aria-current="page">Contact</a>
+    <div class="nav__links">
+      <a href="/">Home</a>
+      <a href="/about-us">About Us</a>
+      <a href="/services">Our Services</a>
+      <a href="/contact-us" aria-current="page">Contact</a>
+    </div>
     <a class="btn btn--primary" href="/appointment">Book a Mobile Visit <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
   </div>
 </nav>
 
 <section class="page-hero">
   <div class="container">
-    <span class="eyebrow">Contact Us</span>
-    <h1>Get in Touch</h1>
-    <p>Reach out for a mobile visit, corporate services, or any questions about how Sunesis can support you, your family, or your organization.</p>
-  </div>
-</section>
-
-<section class="section">
-  <div class="container">
-    <div class="split">
-      <div>
-        <h2>Talk to us directly</h2>
-        <p class="lead">Many visitors prefer to call or message rather than fill out a form. We're happy either way.</p>
-        <div class="btn-row">
-          <a class="btn btn--primary" href="tel:+256758942379">Call Now</a>
-          <a class="btn btn--ghost" href="https://wa.me/256758942379?text=Hi%2C%20I%27d%20like%20to%20book%20a%20mobile%20visit" target="_blank" rel="noopener">Chat on WhatsApp</a>
-        </div>
-        <ul class="glance" style="list-style:none;margin-top:2rem">
-          <li style="display:flex;gap:.65rem;align-items:center;margin-bottom:.85rem"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:20px;height:20px;color:var(--green-600)"><path d="M22 16.92v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3.1-8.6A2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.3 1.8.6 2.6a2 2 0 0 1-.5 2.1L8 9.6a16 16 0 0 0 6 6l1.2-1.2a2 2 0 0 1 2.1-.5c.8.3 1.7.5 2.6.6a2 2 0 0 1 1.7 2z"/></svg> <a href="tel:+256758942379">+256 758 942379</a></li>
-          <li style="display:flex;gap:.65rem;align-items:center;margin-bottom:.85rem"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:20px;height:20px;color:var(--green-600)"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg> <a href="mailto:sunesismedicalservices@gmail.com">sunesismedicalservices@gmail.com</a></li>
-          <li style="display:flex;gap:.65rem;align-items:center"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:20px;height:20px;color:var(--green-600)"><path d="M21 10c0 7-9 12-9 12s-9-5-9-12a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg> Service Area: Kampala and surrounding areas</li>
-        </ul>
+    <div>
+      <h1>Contact our care team today</h1>
+      <p>We're always here to help you make informed decisions about your healthcare.</p>
+      <div class="btn-row">
+        <a class="btn btn--white" href="/appointment">Free Consultation</a>
+        <a class="btn btn--soft" href="tel:+256758942379">Contact Now</a>
       </div>
-      <div>
-        <form data-wa data-wa-intro="Hello Sunesis, I have an enquiry from your website.">
-          <div class="form-success">Thanks, your message has been prepared in WhatsApp, send it and we'll get back to you shortly.</div>
-          <div class="field">
-            <label for="c-name">Name</label>
-            <input id="c-name" type="text" name="name" data-label="Name" required>
-          </div>
-          <div class="field-row">
-            <div class="field">
-              <label for="c-phone">Phone</label>
-              <input id="c-phone" type="tel" name="phone" data-label="Phone" required>
-            </div>
-            <div class="field">
-              <label for="c-email">Email</label>
-              <input id="c-email" type="email" name="email" data-label="Email">
-            </div>
-          </div>
-          <div class="field">
-            <label for="c-service">Service Interested In</label>
-            <select id="c-service" name="service" data-label="Service">
-              <option value="">Select a service</option>
-              <option>Mobile &amp; On-Demand Care</option>
-              <option>Corporate &amp; Institutional Services</option>
-              <option>Specialized &amp; Mental Health</option>
-              <option>Medical Travel Services</option>
-              <option>First Aid Services &amp; Training</option>
-            </select>
-          </div>
-          <div class="field">
-            <label for="c-message">Message</label>
-            <textarea id="c-message" name="message" data-label="Message"></textarea>
-          </div>
-          <button class="btn btn--primary" type="submit">Send via WhatsApp</button>
-          <p class="form-note" style="margin-top:.75rem">Submitting opens WhatsApp with your message ready to send.</p>
-        </form>
-      </div>
+    </div>
+    <div class="page-hero__media">
+      <img src="/assets/images/nurse-and-doctor.jpg" alt="Sunesis clinician supporting a patient">
+      <span class="play-dot" aria-hidden="true"></span>
     </div>
   </div>
 </section>
 
-<section class="section section--surface">
+<section class="section booking-section">
   <div class="container">
-    <div class="sec-head sec-head--center"><h2>Where We Serve</h2><p class="lead">We're a mobile provider, we come to you across Kampala and the surrounding areas.</p></div>
-    <!-- Confirm exact service-area framing of the map before launch -->
-    <iframe class="map-embed" src="https://www.google.com/maps?q=Kampala,Uganda&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Sunesis Medical Services area, Kampala and surrounding areas"></iframe>
+    <div class="contact-grid">
+      <div class="contact-copy">
+        <h2>We're here to care for your health</h2>
+        <div class="social-row">
+          <a href="https://wa.me/256758942379" aria-label="WhatsApp">W</a>
+          <a href="tel:+256758942379" aria-label="Call">C</a>
+          <a href="mailto:sunesismedicalservices@gmail.com" aria-label="Email">M</a>
+        </div>
+      </div>
+      <div class="contact-form-panel">
+        <form data-wa data-wa-intro="Hello Sunesis, I have an enquiry from your website.">
+          <div class="form-success">Thanks, your message has been prepared in WhatsApp, send it and we'll get back to you shortly.</div>
+          <div class="field-row">
+            <div class="field">
+              <label for="c-first">First Name</label>
+              <input id="c-first" type="text" name="first_name" data-label="First Name" placeholder="Enter First Name" required>
+            </div>
+            <div class="field">
+              <label for="c-last">Last Name</label>
+              <input id="c-last" type="text" name="last_name" data-label="Last Name" placeholder="Enter Last Name">
+            </div>
+          </div>
+          <div class="field-row">
+            <div class="field"><label for="c-email">Email Address</label><input id="c-email" type="email" name="email" data-label="Email" placeholder="Enter email"></div>
+            <div class="field"><label for="c-phone">Phone Number</label><input id="c-phone" type="tel" name="phone" data-label="Phone" placeholder="Enter number" required></div>
+          </div>
+          <div class="field">
+            <label for="c-message">Message</label>
+            <textarea id="c-message" name="message" data-label="Message" placeholder="Write your message..."></textarea>
+          </div>
+          <label style="display:flex;align-items:center;gap:.55rem;margin:.4rem 0 1rem;color:#52605e;font-size:.9rem"><input type="checkbox" aria-label="I'm not a robot"> I'm not a robot</label>
+          <button class="btn btn--primary" type="submit">Send Message</button>
+        </form>
+      </div>
+    </div>
   </div>
 </section>
 

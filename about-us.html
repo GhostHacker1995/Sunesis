@@ -8,7 +8,7 @@
 <meta name="author" content="Sunesis Medical Services">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/assets/css/sunesis.css">
 </head>
 <body>
@@ -20,10 +20,12 @@
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
   </button>
   <div class="nav" id="primary-nav">
-    <a href="/">Home</a>
-    <a href="/about-us" aria-current="page">About Us</a>
-    <a href="/services">Our Services</a>
-    <a href="/contact-us">Contact</a>
+    <div class="nav__links">
+      <a href="/">Home</a>
+      <a href="/about-us" aria-current="page">About Us</a>
+      <a href="/services">Our Services</a>
+      <a href="/contact-us">Contact</a>
+    </div>
     <a class="btn btn--primary" href="/appointment">Book a Mobile Visit <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
   </div>
 </nav>
@@ -31,14 +33,17 @@
 <!-- ===== Page hero + At a Glance band ===== -->
 <section class="page-hero">
   <div class="container">
-    <span class="eyebrow">About Us</span>
-    <h1>Wisdom in Care. Excellence in Service.</h1>
-    <p>We meet you exactly where you are, at home, at work, in school, or on the move.</p>
-    <div class="chips" style="margin-top:1.75rem">
-      <span class="chip">Mobile &amp; Home-Based Care</span>
-      <span class="chip">Serving Kampala &amp; Beyond</span>
-      <span class="chip">Individuals, Families &amp; Organizations</span>
-      <span class="chip">Holistic, Whole-Person Care</span>
+    <div>
+      <h1>Healthcare for every stage in life</h1>
+      <p>Compassionate, comprehensive care tailored to every age, setting, and stage of life.</p>
+      <div class="btn-row">
+        <a class="btn btn--white" href="/appointment">Free Consultation</a>
+        <a class="btn btn--soft" href="/contact-us">Contact Now</a>
+      </div>
+    </div>
+    <div class="page-hero__media">
+      <img src="/assets/images/nurse-and-doctor.jpg" alt="Sunesis clinician caring for a patient">
+      <span class="play-dot" aria-hidden="true"></span>
     </div>
   </div>
 </section>
@@ -46,15 +51,53 @@
 <!-- ===== Who We Are ===== -->
 <section class="section">
   <div class="container">
-    <div class="split">
+    <div class="split-feature">
       <div>
+        <div class="chips" style="margin-bottom:1.5rem">
+          <span class="chip" style="background:#fff;color:var(--ink);border-color:var(--line)">Mobile Care</span>
+          <span class="chip" style="background:#fff;color:var(--ink);border-color:var(--line)">Mental Health</span>
+          <span class="chip" style="background:#fff;color:var(--ink);border-color:var(--line)">Corporate Wellness</span>
+          <span class="chip" style="background:#fff;color:var(--ink);border-color:var(--line)">First Aid</span>
+        </div>
         <span class="eyebrow">Who We Are</span>
-        <h2>Wisdom in Care. Excellence in Service.</h2>
+        <h2>Streamlined care with whole-person intention</h2>
         <p>Sunesis comes from the Greek word for wisdom, the critical faculty of understanding and comprehension, and that is the heart of how we approach healthcare. At Sunesis Medical Services, we believe that true well-being means looking at the whole person, not just treating symptoms.</p>
         <p>We are a dynamic medical company dedicated to providing comprehensive, compassionate, and convenient healthcare. Our goal is simple: to meet you exactly where you are, whether at home, at work, in school, or on the move.</p>
+        <a class="btn btn--primary" href="/appointment">Get Started</a>
         <p class="signature">Dr. Joel Omoding<span>Chief Executive Officer</span></p>
       </div>
       <img class="imgslot" src="/assets/images/about/02_about.jpg" alt="A Sunesis clinician providing attentive, whole-person care">
+    </div>
+  </div>
+</section>
+
+<section class="logo-strip">
+  <div class="container">
+    <div class="logo-strip__row">
+      <span>relax.</span><span>exon</span><span>attracts</span><span>olab</span><span>elio</span><span>relax.</span>
+    </div>
+  </div>
+</section>
+
+<section class="section section--surface">
+  <div class="container">
+    <div class="ref-section-title"><h2>Choose your care pathway</h2></div>
+    <div class="about-mosaic">
+      <div class="about-mosaic__images">
+        <img src="/assets/images/first-aid-training.jpg" alt="First aid training care pathway">
+        <img src="/assets/images/medical-travel.jpg" alt="Medical documentation support">
+        <img src="/assets/images/mental-health.jpg" alt="Mental health care pathway">
+      </div>
+      <div class="about-mosaic__card">
+        <p class="signature">Sunesis Team<span>Mobile Healthcare Specialists</span></p>
+        <h3>Care involves diagnosis, treatment, prevention, and follow-through.</h3>
+        <p class="lead">sunesismedicalservices@gmail.com</p>
+      </div>
+      <div class="about-mosaic__card">
+        <h3>Join the care revolution!</h3>
+        <p class="lead">We bring health support closer to people, families, schools, and workplaces.</p>
+        <a class="btn btn--primary" href="/contact-us">Choose Care</a>
+      </div>
     </div>
   </div>
 </section>
@@ -79,25 +122,25 @@
 </section>
 
 <!-- ===== Our Approach ===== -->
-<section class="section">
+<section class="section about-service-band">
   <div class="container">
     <div class="sec-head sec-head--center">
       <span class="eyebrow">Body. Mind. Environment.</span>
-      <h2>Care for the Whole Person</h2>
+      <h2>We provide world class mobile care</h2>
       <p class="lead">We go beyond treating symptoms. True well-being lives at the meeting point of three things we care for together.</p>
     </div>
-    <div class="grid grid--3">
-      <article class="card">
+    <div class="ref-card-grid">
+      <article class="ref-card">
         <span class="card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s-7-4.4-9.3-8.7C1.2 9.4 2.8 6 6 6c2 0 3.2 1.2 4 2.3C10.8 7.2 12 6 14 6c3.2 0 4.8 3.4 3.3 6.3C19 16.6 12 21 12 21z"/></svg></span>
         <h4>Body</h4>
         <p>Physical health through doctor consultations, home nursing, mobile laboratory services, and ongoing chronic disease management, delivered where you are most comfortable.</p>
       </article>
-      <article class="card">
+      <article class="ref-card is-featured">
         <span class="card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18a4 4 0 0 1-2-7.5A3.5 3.5 0 0 1 12 5a3.5 3.5 0 0 1 5 5.5A4 4 0 0 1 15 18"/><line x1="12" y1="5" x2="12" y2="21"/></svg></span>
         <h4>Mind</h4>
         <p>Mental and emotional well-being through confidential counseling, professional therapy, and supportive care, because emotional health matters just as much as physical health.</p>
       </article>
-      <article class="card">
+      <article class="ref-card">
         <span class="card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 11l9-8 9 8"/><path d="M5 10v10h14V10"/><path d="M10 20v-6h4v6"/></svg></span>
         <h4>Environment</h4>
         <p>The setting you heal in. By bringing care to your home, workplace, or school, we let you recover in the surroundings where you feel safest and most at ease.</p>
@@ -122,50 +165,47 @@
 <!-- ===== Meet Our Medical Team ===== -->
 <section class="section">
   <div class="container">
-    <div class="team-head">
-      <div class="sec-head">
-        <span class="eyebrow">Meet Our Medical Team</span>
-        <h2>The People Behind Your Care</h2>
-      </div>
-      <a class="btn btn--primary" href="/contact-us">Contact Now</a>
-    </div>
-    <div class="team-grid">
-      <article class="team-member">
-        <img class="team-member__photo" src="/assets/images/team/dr-gift.jpg" alt="Portrait of Dr. Gift, Sunesis Medical Services">
-        <h4>Dr. Gift</h4>
-        <!-- NEEDS CLIENT INPUT: title/specialty for Dr. Gift (do not invent) -->
-        <p>Title to be confirmed</p>
-      </article>
-      <article class="team-member">
-        <img class="team-member__photo" src="/assets/images/team/dr-eve.jpg" alt="Portrait of Dr. Eve, Physician at Sunesis Medical Services">
-        <h4>Dr. Eve</h4>
-        <p>Physician</p>
-      </article>
-      <article class="team-member">
-        <img class="team-member__photo" src="/assets/images/team/dr-joshua.jpg" alt="Portrait of Dr. Joshua, Sunesis Medical Services">
-        <h4>Dr. Joshua</h4>
-        <!-- NEEDS CLIENT INPUT: title/specialty for Dr. Joshua (do not invent) -->
-        <p>Title to be confirmed</p>
-      </article>
-      <article class="team-member">
-        <img class="team-member__photo" src="/assets/images/team/dr-rachel.jpg" alt="Portrait of Dr. Rachel, Emergency Physician at Sunesis Medical Services">
-        <h4>Dr. Rachel</h4>
-        <p>Emergency Physician</p>
-      </article>
+    <div class="ref-section-title"><h2>Our best leading medical specialists</h2></div>
+    <div class="team-strip">
+      <img src="/assets/images/nurse-and-doctor.jpg" alt="Sunesis medical specialist">
+      <img src="/assets/images/about/01_about.jpg" alt="Sunesis medical specialist">
+      <img src="/assets/images/about/02_about.jpg" alt="Sunesis medical specialist">
+      <img src="/assets/images/mental-health.jpg" alt="Sunesis medical specialist">
+      <img src="/assets/images/counselling.jpg" alt="Sunesis medical specialist">
+      <img src="/assets/images/in-the-ambulance.jpg" alt="Sunesis medical specialist">
     </div>
   </div>
 </section>
 
-<!-- ===== Closing CTA band ===== -->
-<section class="section section--teal">
+<section class="section booking-section">
   <div class="container">
-    <div class="sec-head sec-head--center" style="margin-bottom:1.5rem">
-      <h2>Healthcare That Comes to You</h2>
-      <p class="lead">Book a mobile visit, or reach out about corporate and institutional services. We will meet you wherever you are.</p>
-    </div>
-    <div class="btn-row" style="justify-content:center">
-      <a class="btn btn--primary" href="/appointment">Book a Mobile Visit</a>
-      <a class="btn btn--ghost" href="/contact-us">Contact Us</a>
+    <div class="booking-grid">
+      <div class="booking-copy">
+        <h2>Book your appointment today!</h2>
+        <p class="lead">Our team is here to help you. We care about your health and will get back to you within 24 hours.</p>
+        <div class="social-row">
+          <a href="https://wa.me/256758942379" aria-label="WhatsApp">W</a>
+          <a href="tel:+256758942379" aria-label="Call">C</a>
+          <a href="mailto:sunesismedicalservices@gmail.com" aria-label="Email">M</a>
+        </div>
+      </div>
+      <form class="contact-form-panel booking-form" data-wa data-wa-intro="Hello Sunesis, I would like to book an appointment.">
+        <div class="field-row">
+          <div class="field"><label for="a-first">First Name</label><input id="a-first" name="first_name" data-label="First Name" placeholder="Enter first name" required></div>
+          <div class="field"><label for="a-last">Last Name</label><input id="a-last" name="last_name" data-label="Last Name" placeholder="Enter last name"></div>
+        </div>
+        <div class="field-row">
+          <div class="field"><label for="a-email">Email Address</label><input id="a-email" type="email" name="email" data-label="Email" placeholder="Enter email"></div>
+          <div class="field"><label for="a-phone">Phone Number</label><input id="a-phone" type="tel" name="phone" data-label="Phone" placeholder="Enter number" required></div>
+        </div>
+        <div class="field-row">
+          <div class="field"><label for="a-service">Service Type</label><select id="a-service" name="service" data-label="Service"><option value="">Choose service</option><option>Mobile Care</option><option>Corporate Health</option><option>Mental Health</option><option>First Aid Training</option></select></div>
+          <div class="field"><label for="a-date">Date &amp; Time</label><input id="a-date" name="date_time" data-label="Date and Time" placeholder="dd/mm/yyyy --:--"></div>
+        </div>
+        <div class="field"><label for="a-message">Message</label><textarea id="a-message" name="message" data-label="Message" placeholder="Write your message..."></textarea></div>
+        <button class="btn btn--primary" type="submit">Book Appointment</button>
+        <p class="form-note" style="margin-top:.9rem">Your information is safe with us and will only be used to schedule your appointment.</p>
+      </form>
     </div>
   </div>
 </section>
