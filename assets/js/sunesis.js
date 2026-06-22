@@ -88,7 +88,7 @@
   });
 
   // Forms -> WhatsApp composer
-  var WA = "https://wa.me/256758942379?text=";
+  var WA = "https://wa.me/256785065560?text=";
   document.querySelectorAll("form[data-wa]").forEach(function (form) {
     form.addEventListener("submit", function (ev) {
       ev.preventDefault();

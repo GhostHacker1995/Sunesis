@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://sunesismedical.com/sitemap.xml
+Sitemap: https://sunesismedicalservices.com/sitemap.xml

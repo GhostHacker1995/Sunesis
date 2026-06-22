@@ -8,7 +8,7 @@
 <meta name="author" content="Sunesis Medical Services">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/assets/css/sunesis.css">
 </head>
 <body>
@@ -20,10 +20,19 @@
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
   </button>
   <div class="nav" id="primary-nav">
-    <a href="/">Home</a>
+    <div class="nav__links"><a href="/">Home</a>
     <a href="/about-us">About Us</a>
-    <a href="/services" aria-current="page">Our Services</a>
-    <a href="/contact-us">Contact</a>
+    <div class="nav-item has-dropdown">
+      <a href="/services" aria-current="page" class="nav-item__top">Our Services <svg class="caret" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg></a>
+      <div class="nav-dropdown">
+        <a href="/services/mobile-care">Mobile &amp; On-Demand Care</a>
+        <a href="/services/corporate-health">Corporate &amp; Institutional</a>
+        <a href="/services/mental-health">Specialized &amp; Mental Health</a>
+        <a href="/services/medical-travel">Medical Travel Services</a>
+        <a href="/services/first-aid">First Aid Services &amp; Training</a>
+      </div>
+    </div>
+    <a href="/contact-us">Contact</a></div>
     <a class="btn btn--primary" href="/appointment">Book a Mobile Visit <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
   </div>
 </nav>
@@ -134,7 +143,7 @@
           <h5>Get Care</h5>
           <ul>
             <li><a href="/appointment">Book a Visit</a></li>
-            <li><a href="https://wa.me/256758942379" target="_blank" rel="noopener">WhatsApp Us</a></li>
+            <li><a href="https://wa.me/256785065560" target="_blank" rel="noopener">WhatsApp Us</a></li>
             <li><a href="tel:+256758942379">Call Us</a></li>
           </ul>
         </div>
@@ -146,8 +155,9 @@
     </div>
   </div>
 </footer>
-<a class="wa-fab" href="https://wa.me/256758942379?text=Hi%2C%20I%27d%20like%20to%20book%20a%20mobile%20visit" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+<a class="wa-fab" href="https://wa.me/256785065560?text=Hi%2C%20I%27d%20like%20to%20chat%20with%20Sunesis" target="_blank" rel="noopener" aria-label="Chat with us on WhatsApp">
   <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.5 15.3L2 22l4.8-1.5A10 10 0 1 0 12 2zm5.3 14.2c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .1-3-.8-2.5-1-4.1-3.6-4.2-3.8-.1-.2-1-1.3-1-2.5s.6-1.8.9-2c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 1.9c.1.2.1.4 0 .5l-.4.6c-.2.2-.3.4-.1.7.2.3.8 1.3 1.7 2.1 1.2 1 2 1.3 2.3 1.5.2.1.4.1.6-.1l.7-.9c.2-.2.4-.2.6-.1l1.8.9c.2.1.4.2.5.3.1.2.1.7-.1 1.3z"/></svg>
+  <span class="wa-fab__label">Chat with us</span>
 </a>
 <button class="scroll-top" aria-label="Scroll to top">
   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="18 15 12 9 6 15"/></svg>
