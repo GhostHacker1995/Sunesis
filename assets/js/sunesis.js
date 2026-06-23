@@ -10,6 +10,7 @@
   // Mobile nav toggle
   var toggle = document.querySelector(".nav-toggle");
   var nav = document.getElementById("primary-nav");
+  var isMobileNav = function () { return window.matchMedia("(max-width: 920px)").matches; };
   if (toggle && nav) {
     toggle.addEventListener("click", function () {
       var open = nav.classList.toggle("is-open");
@@ -18,10 +19,21 @@
     });
     nav.querySelectorAll("a").forEach(function (a) {
       a.addEventListener("click", function () {
+        // On mobile, tapping the "Our Services" parent only toggles its submenu
+        if (a.classList.contains("nav-item__top") && isMobileNav()) return;
         nav.classList.remove("is-open");
         toggle.setAttribute("aria-expanded", "false");
         toggle.setAttribute("aria-label", "Open menu");
       });
+    });
+  }
+
+  // "Our Services" dropdown: tap-to-toggle on mobile (hover handles desktop)
+  var ddItem = document.querySelector(".nav-item.has-dropdown");
+  if (ddItem) {
+    var ddTop = ddItem.querySelector(".nav-item__top");
+    ddTop.addEventListener("click", function (e) {
+      if (isMobileNav()) { e.preventDefault(); ddItem.classList.toggle("is-open"); }
     });
   }
 
